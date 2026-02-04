@@ -105,102 +105,99 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" style="position: relative; padding: 5rem 1rem; max-width: 96rem; margin: 0 auto; z-index: 3;">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
-                <!-- Profile Card -->
-                <div style="backdrop-filter: blur(12px); background: rgba(26, 26, 36, 0.4); border: 1px solid #333339; border-radius: 1rem; padding: 1.5rem; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: linear-gradient(to bottom right, rgba(100, 50, 255, 0.1), rgba(100, 100, 255, 0.1));">
-                  <img src="./images/img.jpg">
-                </div>
+<!-- About Section -->
+<section id="about" class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-                <!-- Bio -->
-                <div style="display: flex; flex-direction: column; gap: 2rem;">
-                    <div>
-                        <h2 style="font-size: 2.25rem; font-weight: bold; margin-bottom: 1.5rem; line-height: 1.2;">About Me</h2>
-                        <p style="font-size: 1rem; color: #99999d; line-height: 1.75;">I'm a creative professional with a passion for blending design aesthetics with functional development. Specializing in crafting premium digital experiences that leave a lasting impression.</p>
-                    </div>
+    <!-- Profile Image -->
+    <div class="relative">
+      <div
+        class="aspect-square rounded-2xl overflow-hidden
+               border border-[#333339]
+               bg-gradient-to-br from-[rgba(100,50,255,0.15)] to-[rgba(100,100,255,0.1)]
+               backdrop-blur-xl"
+      >
+        <img
+          src="./images/img.jpg"
+          alt="Stephen Johnson Makong"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
 
-                    <div class="backdrop-blur-xl bg-[rgba(26,26,36,0.4)] border border-[#333339] rounded-2xl p-6 flex flex-col gap-6 transition-all duration-300">
-  
-  <h3 class="text-lg font-semibold text-white">
-    Personal Info
-  </h3>
+    <!-- Bio Content -->
+    <div class="flex flex-col gap-10">
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    
+      <div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
+          About Me
+        </h2>
+        <p class="text-sm sm:text-base text-gray-400 leading-relaxed max-w-xl">
+          I'm a creative professional with a passion for blending design aesthetics
+          with functional development. Specializing in crafting premium digital
+          experiences that leave a lasting impression.
+        </p>
+      </div>
+
+      <!-- Personal Info -->
+      <div
+        class="backdrop-blur-xl bg-[rgba(26,26,36,0.4)]
+               border border-[#333339]
+               rounded-2xl p-5 sm:p-6
+               grid grid-cols-1 sm:grid-cols-2 gap-6"
+      >
+        <div>
+          <p class="text-xs text-gray-500">Full Name</p>
+          <p class="text-sm font-medium">Stephen Johnson Makong</p>
+        </div>
+        <div>
+          <p class="text-xs text-gray-500">Nickname</p>
+          <p class="text-sm font-medium">King Stephen</p>
+        </div>
+        <div>
+          <p class="text-xs text-gray-500">Age</p>
+          <p class="text-sm font-medium">21</p>
+        </div>
+        <div>
+          <p class="text-xs text-gray-500">DOB</p>
+          <p class="text-sm font-medium">September 9, 2005</p>
+        </div>
+        <div>
+          <p class="text-xs text-gray-500">Address</p>
+          <p class="text-sm font-medium">Opposite TSU 2nd Gate, ATC</p>
+        </div>
+        <div>
+          <p class="text-xs text-gray-500">Hobby</p>
+          <p class="text-sm font-medium">Gaming (CODM, Bloodstrike)</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
+  <div class="flex flex-col gap-12">
+
     <div>
-      <p class="text-sm text-gray-500 mb-1">Full Name</p>
-      <p class="text-base font-medium text-white">
-        Stephen Johnson Makong
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
+        Skills & Tech Stack
+      </h2>
+      <p class="text-gray-400 mt-2 text-sm sm:text-base lg:text-lg">
+        Expertise across design and development
       </p>
     </div>
 
-    <div>
-      <p class="text-sm text-gray-500 mb-1">Nickname</p>
-      <p class="text-base font-medium text-white">
-        King Stephen
-      </p>
-    </div>
-
-    <div>
-      <p class="text-sm text-gray-500 mb-1">Age</p>
-      <p class="text-base font-medium text-white">
-        21
-      </p>
-    </div>
-
-    <div>
-      <p class="text-sm text-gray-500 mb-1">Date of Birth</p>
-      <p class="text-base font-medium text-white">
-        September 9, 2005
-      </p>
-    </div>
-
-    <div>
-      <p class="text-sm text-gray-500 mb-1">Address</p>
-      <p class="text-base font-medium text-white">
-        Opposite TSU 2nd Gate, ATC
-      </p>
-    </div>
-
-    <div>
-      <p class="text-sm text-gray-500 mb-1">LGA</p>
-      <p class="text-base font-medium text-white">
-        Yorro L.G.A
-      </p>
-    </div>
-
-    <div>
-      <p class="text-sm text-gray-500 mb-1">Tribe</p>
-      <p class="text-base font-medium text-white">
-        Mumuye
-      </p>
-    </div>
-	
-	<div>
-      <p class="text-sm text-gray-500 mb-1">Hobby:</p>
-      <p class="text-base font-medium text-white">
-        Gaming: CODM, Bloodstrike
-      </p>
-    </div>
+    <div
+      id="skillsGrid"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+    ></div>
 
   </div>
-</div>
+</section>
 
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" style="position: relative; padding: 5rem 1rem; max-width: 96rem; margin: 0 auto; z-index: 3;">
-            <div style="display: flex; flex-direction: column; gap: 3rem;">
-                <div>
-                    <h2 style="font-size: 2.25rem; font-weight: bold; line-height: 1.2;">Skills & Tech Stack</h2>
-                    <p style="color: #99999d; margin-top: 0.5rem; font-size: 1.125rem;">Expertise across design and development</p>
-                </div>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;" id="skillsGrid">
-                </div>
-            </div>
         </section>
 
 
